@@ -12,7 +12,7 @@
   "homepage": "https://github.com/mikew/prettier_d",
   "scripts": {
     "lint": "eslint . --ignore-pattern '**/node_modules/**'",
-    "prepare": "tsc --project tsconfig.json",
+    "preinstall": "tsc --project tsconfig.json",
     "version": "changes --commits --footer",
     "postversion": "git push --follow-tags && npm publish"
   },
