@@ -4,7 +4,7 @@ module.exports = {
   },
   env: {},
   plugins: ['simple-import-sort'],
-  ignorePatterns: ['lib/', 'old/'],
+  ignorePatterns: ['lib/', 'old/', 'bin/'],
   extends: [
     'plugin:@typescript-eslint/recommended',
 
@@ -14,7 +14,6 @@ module.exports = {
     // disables rules that prettier fixes.
     // others disable rules that common eslint configs set.
     'prettier',
-    'prettier/@typescript-eslint',
   ],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -28,7 +27,7 @@ module.exports = {
         typedefs: false,
       },
     ],
-    'simple-import-sort/sort': [
+    'simple-import-sort/imports': [
       'warn',
       {
         groups: [
